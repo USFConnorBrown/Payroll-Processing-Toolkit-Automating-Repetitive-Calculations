@@ -11,8 +11,12 @@ function calculateBasePay(rate, hours) {
 const regularHours = Math.min(hours, 40); // Regular hours are capped at 40
 return rate * regularHours
 }
-//Step 4: Write the fucntion to calculate overtime pay
+//Step 4: Write the function to calculate overtime pay
 function calculateOvertimePay(rate, hours) {
   const overtimeHours = Math.max(hours - 40, 0);
   return overtimeHours * rate * 1.5; // Overtime is paid at 1.5 times the hourly rate 
+}
+//Step 5: Write the function to calculate gross pay that deducts 15% for taxes
+function calculateTaxes(grossPay) {
+  return grossPay * 0.15; // 15% tax deduction
 }
