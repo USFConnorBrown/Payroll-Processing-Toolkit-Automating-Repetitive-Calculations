@@ -8,6 +8,11 @@ const employees = [
 ];
 // Step 3: Write a function 
 function calculateBasePay(rate, hours) {
-const regularHours = Math.min(hours, 40);
+const regularHours = Math.min(hours, 40); // Regular hours are capped at 40
 return rate * regularHours
+}
+//Step 4: Write the fucntion to calculate overtime pay
+function calculateOvertimePay(rate, hours) {
+  const overtimeHours = Math.max(hours - 40, 0);
+  return overtimeHours * rate * 1.5; // Overtime is paid at 1.5 times the hourly rate 
 }
