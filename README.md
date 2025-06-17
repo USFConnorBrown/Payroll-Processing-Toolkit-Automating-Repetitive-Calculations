@@ -1,1 +1,2 @@
 # Payroll-Processing-Toolkit-Automating-Repetitive-Calculations
+This is my project for the Coding Challenge 05: Payroll Processing Toolkit: Automating Repetititve. The project includes a JavaScript that has the payroll processing toolkit that was made to automate the salary calucaltions for each of the 5 employees. My program utilized many functions to be able to calculate the base pay (up to 40 hours), have a overtime pay rate at 1.5x the hourly wage and include a 15% tax deduction on the final gross pay.
