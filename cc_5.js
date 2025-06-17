@@ -39,5 +39,9 @@ function processPayroll(employee) {
 //Step 7: Loop through the array of employees and process payroll for each
 for (const employee of employees) {
     const payroll = processPayroll(employee);
-    console.log(`Payroll for ${payroll.name}:`);
+    console.log(`Payroll for ${payroll.name}:`), payroll;
 }
+// Want to have console.log for each of the functions to ensure that they are all correct so each one is tested
+console.log("Base Pay:", calculateBasePay(20, 40)); // Should return 800
+console.log("Overtime Pay:", calculateOvertimePay(20, 45)); // Should return 75
+console.log("Taxes:", calculateTaxes(875)); // Should return 131.25 
